@@ -13,7 +13,8 @@ def load_model():
 @st.cache_data
 def load_sheet(sheet_name="Sheet1"):
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+    creds_dict = st.secrets["google"]
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(dict(creds_dict), scope)
     client = gspread.authorize(creds)
     sheet = client.open("employee").worksheet(sheet_name)
     data = sheet.get_all_records()
