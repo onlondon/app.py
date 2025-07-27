@@ -1,0 +1,44 @@
+def local_css():
+    st.markdown("""
+        <style>
+        /* Toàn bộ app */
+        .main {
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Tiêu đề */
+        h1 {
+            color: #2c3e50;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Subheader */
+        .css-1v0mbdj h2 {
+            color: #34495e;
+            font-size: 24px;
+            border-left: 4px solid #2ecc71;
+            padding-left: 10px;
+        }
+
+        /* Bảng dữ liệu */
+        .stDataFrame {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Pie chart title */
+        .js-plotly-plot .main-svg text {
+            font-size: 14px !important;
+            fill: #2c3e50;
+        }
+
+        /* Footer ẩn đi nếu muốn */
+        footer {
+            visibility: hidden;
+        }
+        </style>
+    """, unsafe_allow_html=True)

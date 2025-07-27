@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# MacOS / Windows
+.DS_Store
+Thumbs.db
+
+# VSCode / PyCharm configs
+.vscode/
+.idea/
+
+# Streamlit logs
+.streamlit/
+
+# Model & credentials (nếu bạn không muốn đẩy lên)
+*.pkl
+credentials.json
+
+# Output files
+*.csv
+*.xlsx

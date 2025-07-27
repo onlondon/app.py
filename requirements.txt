@@ -1,0 +1,7 @@
+streamlit
+pandas
+scikit-learn
+numpy
+gspread
+oauth2client
+plotly
